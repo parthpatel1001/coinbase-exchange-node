@@ -1,4 +1,12 @@
 # Coinbase Exchange
+
+* see [this](https://github.com/parthpatel1001/coinbase-exchange-node/commit/c70481f0986529484fb5ee59985400176389f383) for the change made to the OrderBookSync client
+```Javascript
+var CoinbaseExchange = require('coinbase-exchange');
+var orderbookSync = new CoinbaseExchange.OrderbookSync();
+orderbookSync.subscribe(function(book){ console.log('got a message'); });
+```
+
 The official Node.js library for the [Coinbase Exchange
 API](https://docs.exchange.coinbase.com/).
 
